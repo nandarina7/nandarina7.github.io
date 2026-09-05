@@ -23,9 +23,8 @@ function flatten(nodes: CategoryNode[], depth = 0): Row[] {
 
 const rows = flatten(tree);
 
-const COLLAPSED_HEIGHT = "7.5rem";
-const COLLAPSE_THRESHOLD = 5;
-const isCollapsed = rows.length >= COLLAPSE_THRESHOLD;
+// 카테고리는 목차 역할이라 항상 전부 펼쳐 둔다.
+const isCollapsed = false;
 
 interface Props {
 	class?: string;
@@ -35,7 +34,7 @@ const className = Astro.props.class;
 const style = Astro.props.style;
 ---
 
-<WidgetLayout name={i18n(I18nKey.categories)} id="categories" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT}
+<WidgetLayout name={i18n(I18nKey.categories)} id="categories" isCollapsed={isCollapsed}
                 class={className} style={style}
 >
     {rows.map((row) =>
