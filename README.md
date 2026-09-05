@@ -1,99 +1,128 @@
-# 🍥Fuwari  
-![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
-![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
-[![DeepWiki](https://img.shields.io/badge/DeepWiki-saicaca%2Ffuwari-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAyCAYAAAAnWDnqAAAAAXNSR0IArs4c6QAAA05JREFUaEPtmUtyEzEQhtWTQyQLHNak2AB7ZnyXZMEjXMGeK/AIi+QuHrMnbChYY7MIh8g01fJoopFb0uhhEqqcbWTp06/uv1saEDv4O3n3dV60RfP947Mm9/SQc0ICFQgzfc4CYZoTPAswgSJCCUJUnAAoRHOAUOcATwbmVLWdGoH//PB8mnKqScAhsD0kYP3j/Yt5LPQe2KvcXmGvRHcDnpxfL2zOYJ1mFwrryWTz0advv1Ut4CJgf5uhDuDj5eUcAUoahrdY/56ebRWeraTjMt/00Sh3UDtjgHtQNHwcRGOC98BJEAEymycmYcWwOprTgcB6VZ5JK5TAJ+fXGLBm3FDAmn6oPPjR4rKCAoJCal2eAiQp2x0vxTPB3ALO2CRkwmDy5WohzBDwSEFKRwPbknEggCPB/imwrycgxX2NzoMCHhPkDwqYMr9tRcP5qNrMZHkVnOjRMWwLCcr8ohBVb1OMjxLwGCvjTikrsBOiA6fNyCrm8V1rP93iVPpwaE+gO0SsWmPiXB+jikdf6SizrT5qKasx5j8ABbHpFTx+vFXp9EnYQmLx02h1QTTrl6eDqxLnGjporxl3NL3agEvXdT0WmEost648sQOYAeJS9Q7bfUVoMGnjo4AZdUMQku50McDcMWcBPvr0SzbTAFDfvJqwLzgxwATnCgnp4wDl6Aa+Ax283gghmj+vj7feE2KBBRMW3FzOpLOADl0Isb5587h/U4gGvkt5v60Z1VLG8BhYjbzRwyQZemwAd6cCR5/XFWLYZRIMpX39AR0tjaGGiGzLVyhse5C9RKC6ai42ppWPKiBagOvaYk8lO7DajerabOZP46Lby5wKjw1HCRx7p9sVMOWGzb/vA1hwiWc6jm3MvQDTogQkiqIhJV0nBQBTU+3okKCFDy9WwferkHjtxib7t3xIUQtHxnIwtx4mpg26/HfwVNVDb4oI9RHmx5WGelRVlrtiw43zboCLaxv46AZeB3IlTkwouebTr1y2NjSpHz68WNFjHvupy3q8TFn3Hos2IAk4Ju5dCo8B3wP7VPr/FGaKiG+T+v+TQqIrOqMTL1VdWV1DdmcbO8KXBz6esmYWYKPwDL5b5FA1a0hwapHiom0r/cKaoqr+27/XcrS5UwSMbQAAAABJRU5ErkJggg==)](https://deepwiki.com/saicaca/fuwari)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_shield&issueType=license)
+# nandarina7's life blog
 
-A static blog template built with [Astro](https://astro.build).
+개발 블로그 · https://nandarina7.github.io
 
-[**🖥️ Live Demo (Vercel)**](https://fuwari.vercel.app)
+[Astro](https://astro.build) 기반 정적 사이트다. 마크다운 파일 하나가 글 하나이고,
+`main` 에 푸시하면 GitHub Actions 가 빌드해서 자동 배포한다.
 
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+---
 
-🌏 README in
-[**中文**](https://github.com/saicaca/fuwari/blob/main/docs/README.zh-CN.md) /
-[**日本語**](https://github.com/saicaca/fuwari/blob/main/docs/README.ja.md) /
-[**한국어**](https://github.com/saicaca/fuwari/blob/main/docs/README.ko.md) /
-[**Español**](https://github.com/saicaca/fuwari/blob/main/docs/README.es.md) /
-[**ไทย**](https://github.com/saicaca/fuwari/blob/main/docs/README.th.md) /
-[**Tiếng Việt**](https://github.com/saicaca/fuwari/blob/main/docs/README.vi.md) /
-[**Bahasa Indonesia**](https://github.com/saicaca/fuwari/blob/main/docs/README.id.md) (Provided by the community and may not always be up-to-date)
+## 글 쓰는 법
 
-## ✨ Features
+### 1. 파일 만들기
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [x] Search functionality with [Pagefind](https://pagefind.app/)
-- [x] [Markdown extended features](https://github.com/saicaca/fuwari?tab=readme-ov-file#-markdown-extended-syntax)
-- [x] Table of contents
-- [x] RSS feed
+`src/content/posts/` 에 `.md` 파일을 만든다. **파일명이 그대로 URL** 이 된다.
 
-## 🚀 Getting Started
+```
+src/content/posts/키패드-누르기.md  →  /posts/키패드-누르기/
+```
 
-1. Create your blog repository:
-    - [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-    - Or run one of the following commands:
-       ```sh
-       npm create fuwari@latest
-       yarn create fuwari
-       pnpm create fuwari@latest
-       bun create fuwari@latest
-       deno run -A npm:create-fuwari@latest
-       ```
-2. To edit your blog locally, clone your repository, run `pnpm install` to install dependencies.
-    - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment.
+### 2. 스니펫으로 뼈대 넣기
 
-## 📝 Frontmatter of Posts
+빈 파일에서 **`ps` 입력 후 `Tab`**. PS 풀이 일지 뼈대가 통째로 들어간다.
+그다음부터는 `Tab` 을 누를 때마다 입력할 자리로 순서대로 이동한다.
+
+| 순서 | 항목 | 입력 |
+|---|---|---|
+| 1 | 플랫폼 | 드롭다운 — 프로그래머스 / 백준 / 릿코드 / 코드업 |
+| 2 | 문제 이름 | 직접 입력 |
+| 3 | 한 줄 요약 | 직접 입력 |
+| 4 | 알고리즘 태그 | 해시, DP, BFS … |
+| 5 | 언어 태그 | 드롭다운 — Python / Java / C++ / JavaScript / C# |
+| 6 | 공개 여부 | 드롭다운 — false(공개) / true(비공개) |
+| 7 | 문제 링크 | 직접 입력 |
+| 8 | 난이도 | Lv.1 … |
+| 9~10 | 문제 요약, 접근 | 직접 입력 |
+| 11 | 코드블록 언어 | 드롭다운 — **소문자** python / java / cpp … |
+| 12 | 파일 확장자 | 드롭다운 — py / java / cpp … |
+| 13~15 | 시간·공간복잡도, 배운 점 | 직접 입력 |
+
+날짜는 오늘 날짜로 자동으로 채워지고, 1번에서 고른 플랫폼은 제목과 카테고리에
+자동 반영된다.
+
+콜아웃 박스는 **`note` + `Tab`** — note / tip / important / warning / caution 중 고른다.
+
+> 스니펫이 안 펼쳐지면 `Ctrl+Shift+P` → `Developer: Reload Window`.
+> 그래도 안 되면 `Ctrl+Shift+P` → `Insert Snippet` 으로 목록에서 직접 고를 수 있다.
+
+### 3. 미리보기
+
+`Ctrl+Shift+P` → `Run Task` → **블로그 미리보기 시작**
+(터미널을 쓰려면 `corepack pnpm dev`)
+
+http://localhost:4321 에서 확인한다. 저장하면 자동 새로고침된다.
+
+> VS Code 오른쪽의 마크다운 미리보기 패널은 이 블로그의 실제 모습이 아니다.
+> `:::note` 나 코드블록 옵션을 해석하지 못하니 반드시 localhost:4321 로 볼 것.
+
+### 4. 올리기
+
+VS Code 왼쪽 **Source Control**(`Ctrl+Shift+G`) 에서 커밋하고 Sync.
+1분쯤 뒤 사이트에 반영된다.
+
+---
+
+## frontmatter
 
 ```yaml
 ---
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
+title: "[프로그래머스] 두 정수 사이의 합"
+published: 2026-09-05          # 따옴표 없이
+description: "Lv.1 · 기본 · 연속합"
+tags: ["Python"]
+category: "PS/프로그래머스"
+draft: false                    # true 면 배포 사이트에 안 뜬다
+lang: "ko"
 ---
 ```
 
-## 🧩 Markdown Extended Syntax
+### 카테고리는 슬래시로 계층을 만든다
 
-In addition to Astro's default support for [GitHub Flavored Markdown](https://github.github.com/gfm/), several extra Markdown features are included:
+`category` 에 `"PS/프로그래머스"` 처럼 적으면 사이드바에 트리로 표시된다.
+깊이 제한은 없다.
 
-- Admonitions ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#admonitions))
-- GitHub repository cards ([Preview and Usage](https://fuwari.vercel.app/posts/markdown-extended/#github-repository-cards))
-- Enhanced code blocks with Expressive Code ([Preview](https://fuwari.vercel.app/posts/expressive-code/) / [Docs](https://expressive-code.com/))
+```
+PS  (9)              ← 하위 글까지 모두 합산한 숫자
+  프로그래머스  (7)
+  백준  (2)
+개발  (3)
+  C#  (3)
+```
 
-## ⚡ Commands
+부모(`PS`)를 클릭하면 하위 글이 전부 나오고, 자식(`프로그래머스`)을 클릭하면
+그것만 나온다.
 
-All commands are run from the root of the project, from a terminal:
+플랫폼은 카테고리가 담당하므로 **태그에는 알고리즘 유형과 언어만** 적는다.
 
-| Command                    | Action                                              |
-|:---------------------------|:----------------------------------------------------|
-| `pnpm install`             | Installs dependencies                               |
-| `pnpm dev`                 | Starts local dev server at `localhost:4321`         |
-| `pnpm build`               | Build your production site to `./dist/`             |
-| `pnpm preview`             | Preview your build locally, before deploying        |
-| `pnpm check`               | Run checks for errors in your code                  |
-| `pnpm format`              | Format your code using Biome                        |
-| `pnpm new-post <filename>` | Create a new post                                   |
-| `pnpm astro ...`           | Run CLI commands like `astro add`, `astro check`    |
-| `pnpm astro --help`        | Get help using the Astro CLI                        |
+---
 
-## ✏️ Contributing
+## 자주 밟는 함정
 
-Check out the [Contributing Guide](https://github.com/saicaca/fuwari/blob/main/CONTRIBUTING.md) for details on how to contribute to this project.
+- **코드블록 언어는 소문자.** ` ```Python ` 처럼 대문자로 쓰면 문법 강조가
+  조용히 실패하고 회색 텍스트로 렌더링된다. 에러가 안 나서 알아채기 어렵다.
+- **`draft: true` 인 글은 로컬에서는 보이고 배포 사이트에서만 숨는다.**
+  다 쓰고 나서 `false` 로 바꾸는 걸 잊지 말 것.
+- **`pnpm dev` 를 켜둔 채로 `pnpm build` 를 돌리지 말 것.** 캐시가 충돌해
+  Tailwind 에러가 난다. 코드 문제가 아니다.
+- **`src/content/posts/` 안에 있으면 전부 글이 된다.** 하위 폴더에서는 파일명
+  앞의 `_` 도 통하지 않는다. 글이 아닌 파일은 이 폴더 밖에 둘 것.
 
-## 📄 License
+---
 
-This project is licensed under the MIT License.
+## 폴더 구조
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsaicaca%2Ffuwari?ref=badge_large&issueType=license)
+```
+src/content/posts/     글. 여기 넣으면 사이트에 뜬다
+src/config.ts          사이트 제목, 프로필, 네비게이션, 테마
+src/content/spec/      소개 페이지 내용
+templates/ps.md        PS 일지 템플릿 원본 (사이트에는 안 뜸)
+docs/demo-posts/       템플릿 기본 예시 글 보관함 (사이트에는 안 뜸)
+.vscode/               스니펫, 미리보기 태스크, 에디터 설정
+```
+
+---
+
+## 크레딧
+
+[Fuwari](https://github.com/saicaca/fuwari) 템플릿 기반. 템플릿 자체의 문서는
+[docs/README.ko.md](docs/README.ko.md) 에 있다. 라이선스는 [LICENSE](LICENSE) 참고.
