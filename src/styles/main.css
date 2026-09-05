@@ -200,3 +200,16 @@
          bg-[var(--btn-regular-bg)] text-[var(--btn-content)]
          dark:bg-[var(--primary)] dark:text-[var(--deep-text)] transition;
 }
+
+/* 타임라인에서 가장 중요한 항목 강조 (tl-item 에 focus 를 붙인다) */
+.custom-md .timeline .tl-item.focus::before {
+  width: 1rem;
+  height: 1rem;
+  left: -9px;
+  top: 0.125rem;
+  box-shadow: 0 0 0 4px var(--btn-regular-bg);
+}
+
+.custom-md .timeline .tl-item.focus .tl-title {
+  @apply text-[var(--primary)];
+}
