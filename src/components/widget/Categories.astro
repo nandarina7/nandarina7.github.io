@@ -1,16 +1,31 @@
 ---
 import I18nKey from "../../i18n/i18nKey";
 import { i18n } from "../../i18n/translation";
-import { getCategoryList } from "../../utils/content-utils";
-import ButtonLink from "../control/ButtonLink.astro";
+import { type CategoryNode, getCategoryTree } from "../../utils/content-utils";
 import WidgetLayout from "./WidgetLayout.astro";
 
-const categories = await getCategoryList();
+const tree = await getCategoryTree();
+
+type Row = {
+	name: string;
+	count: number;
+	url: string;
+	depth: number;
+};
+
+/** Depth-first flatten so the template can stay a simple list. */
+function flatten(nodes: CategoryNode[], depth = 0): Row[] {
+	return nodes.flatMap((n) => [
+		{ name: n.name, count: n.count, url: n.url, depth },
+		...flatten(n.children, depth + 1),
+	]);
+}
+
+const rows = flatten(tree);
 
 const COLLAPSED_HEIGHT = "7.5rem";
 const COLLAPSE_THRESHOLD = 5;
-
-const isCollapsed = categories.length >= COLLAPSE_THRESHOLD;
+const isCollapsed = rows.length >= COLLAPSE_THRESHOLD;
 
 interface Props {
 	class?: string;
@@ -23,13 +38,33 @@ const style = Astro.props.style;
 <WidgetLayout name={i18n(I18nKey.categories)} id="categories" isCollapsed={isCollapsed} collapsedHeight={COLLAPSED_HEIGHT}
                 class={className} style={style}
 >
-    {categories.map((c) =>
-        <ButtonLink
-            url={c.url}
-            badge={String(c.count)}
-            label={`View all posts in the ${c.name.trim()} category`}
-        >
-            {c.name.trim()}
-        </ButtonLink>
+    {rows.map((row) =>
+        <a href={row.url} aria-label={`${row.name.trim()} 카테고리의 글 모두 보기`}>
+            <button
+                class:list={[
+                    "w-full h-10 rounded-lg bg-none transition-all",
+                    "hover:bg-[var(--btn-plain-bg-hover)] active:bg-[var(--btn-plain-bg-active)]",
+                    "text-neutral-700 hover:text-[var(--primary)]",
+                    "dark:text-neutral-300 dark:hover:text-[var(--primary)]",
+                    row.depth === 0 ? "font-medium" : "text-sm",
+                ]}
+                style={`padding-left: ${0.5 + row.depth * 1}rem`}
+            >
+                <div class="flex items-center justify-between relative mr-2">
+                    <div class="flex items-center gap-1 overflow-hidden text-left whitespace-nowrap overflow-ellipsis">
+                        {row.depth > 0 &&
+                            <span class="text-neutral-400 dark:text-neutral-600 select-none">└</span>
+                        }
+                        <span class="overflow-hidden overflow-ellipsis">{row.name.trim()}</span>
+                    </div>
+                    <div class="transition px-2 h-7 ml-4 min-w-[2rem] rounded-lg text-sm font-bold
+                        text-[var(--btn-content)] dark:text-[var(--deep-text)]
+                        bg-[var(--btn-regular-bg)] dark:bg-[var(--primary)]
+                        flex items-center justify-center">
+                        {row.count}
+                    </div>
+                </div>
+            </button>
+        </a>
     )}
 </WidgetLayout>

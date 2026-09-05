@@ -53,8 +53,16 @@ onMount(async () => {
 	}
 
 	if (categories.length > 0) {
+		// Categories are slash-delimited paths, so selecting a parent such as "PS"
+		// must also match everything filed beneath it ("PS/프로그래머스", ...).
 		filteredPosts = filteredPosts.filter(
-			(post) => post.data.category && categories.includes(post.data.category),
+			(post) =>
+				post.data.category &&
+				categories.some(
+					(c) =>
+						post.data.category === c ||
+						post.data.category?.startsWith(`${c}/`),
+				),
 		);
 	}
 
