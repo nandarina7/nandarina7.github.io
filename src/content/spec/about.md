@@ -1,9 +1,30 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 소개
 
-::github{repo="saicaca/fuwari"}
+안녕하세요, **nandarina7** 입니다.
+컴퓨터공학을 공부하며 그래픽스와 생성 모델에 관심이 있습니다.
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+## 여기에 쓰는 것
+
+배운 걸 까먹지 않으려고 남기는 기록입니다.
+정리하면서 다시 이해하게 되는 게 많아서, 나중의 저를 위해 씁니다.
+
+- **PS** · 코딩테스트 문제 풀이와 접근 과정
+- **논문** · 디퓨전, 영상 생성 모델 리뷰
+- **수업** · 학교에서 배운 것 정리
+- **개발** · Unity, 웹 개발 공부
+- **자격증** · 리눅스마스터, ADSP, 정보처리기사
+- **어학** · JLPT, 토익
+
+## 요즘 하는 것
+
+- 리눅스마스터 1급 준비 · 시험일 2026-09-12
+- DDPM 부터 시작해 디퓨전 모델 논문 읽기
+- Unity 셰이더 공부
+
+## 다루는 것
+
+Python · C# · Unity · 웹
+
+## 연락
+
+궁금한 점이나 틀린 내용을 발견하시면 [GitHub](https://github.com/nandarina7) 으로 알려주세요.
