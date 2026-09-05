@@ -23,7 +23,8 @@
 
 <div class="badges not-prose">
   <span>Python</span>
-  <span>C#</span>
+  <span>C++</span>
+  <span>C</span>
   <span>Unity</span>
   <span>웹</span>
 </div>
@@ -43,13 +44,13 @@
   <div class="tl-item">
     <div class="tl-date">09.12</div>
     <div class="tl-title">리눅스마스터 1급 필기</div>
-    <div class="tl-desc">이 날까지는 리눅스에 집중.</div>
+    <div class="tl-desc">이 날까지는 리눅스 마스터 공부에 집중.</div>
   </div>
 
   <div class="tl-item">
     <div class="tl-date">09월 말</div>
     <div class="tl-title">학과 축제 프로그래밍 대회</div>
-    <div class="tl-desc">참가할 예정. 재미있겠다.</div>
+    <div class="tl-desc">참가할 예정. 수상하고 싶다!</div>
   </div>
 
   <div class="tl-item">
@@ -61,13 +62,13 @@
   <div class="tl-item">
     <div class="tl-date">10월 중</div>
     <div class="tl-title">영어 자격증 응시</div>
-    <div class="tl-desc">꾸준히 준비해서 원하는 점수가 나올 때 친다.</div>
+    <div class="tl-desc">800점 이상 목표</div>
   </div>
 
   <div class="tl-item">
     <div class="tl-date">10월 말</div>
     <div class="tl-title">중간고사</div>
-    <div class="tl-desc">수업에서 배운 것은 수업 카테고리에 정리해 둔다.</div>
+    <div class="tl-desc">수업에서 배운 것을 블로그에 정리</div>
   </div>
 
   <div class="tl-item focus">
@@ -79,13 +80,13 @@
   <div class="tl-item">
     <div class="tl-date">11.28</div>
     <div class="tl-title">PCCP</div>
-    <div class="tl-desc">코딩 역량 인증. PS 카테고리의 기록이 그대로 준비 과정이 된다.</div>
+    <div class="tl-desc">코딩 역량 인증. PS 카테고리에 꾸준히 기록</div>
   </div>
 
   <div class="tl-item">
     <div class="tl-date">12월</div>
     <div class="tl-title">JLPT</div>
-    <div class="tl-desc">틈틈이 준비.</div>
+    <div class="tl-desc">틈틈이 준비</div>
   </div>
 
 </div>
@@ -96,7 +97,8 @@
 
 - **영상 생성 모델 논문 리뷰와 실습** — 인턴 지원 포트폴리오의 중심
 - **Unity** — 급하지 않게, 꾸준히
-- **영어** — 시험 전까지 매일 조금씩
+- **영어와 일본어** — 시험 전까지 매일 조금씩
+- **대학 수학 복습** — 수학 기초도 열심히 갈고닦기
 
 ## 연락
 
