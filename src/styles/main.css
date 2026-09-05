@@ -150,3 +150,53 @@
     }
   }
 }
+/* 소개 페이지 타임라인 (src/content/spec/about.md 에서 사용) */
+.custom-md .timeline {
+  @apply my-7;
+}
+
+.custom-md .timeline .tl-item {
+  @apply relative pl-7 pb-7 border-l-2 border-[var(--line-divider)];
+}
+
+.custom-md .timeline .tl-item:last-child {
+  @apply pb-0 border-transparent;
+}
+
+/* 선 위에 올라앉는 점 */
+.custom-md .timeline .tl-item::before {
+  content: "";
+  @apply absolute left-[-7px] top-1 w-3 h-3 rounded-full bg-[var(--primary)] transition;
+}
+
+/* 지난 일정은 점을 비워서 구분한다 */
+.custom-md .timeline .tl-item.done::before {
+  @apply bg-[var(--card-bg)] border-2 border-[var(--line-divider)];
+}
+
+.custom-md .timeline .tl-date {
+  @apply text-sm font-bold text-[var(--primary)] tracking-wide;
+}
+
+.custom-md .timeline .tl-item.done .tl-date {
+  @apply text-neutral-400 dark:text-neutral-500;
+}
+
+.custom-md .timeline .tl-title {
+  @apply font-bold text-neutral-900 dark:text-neutral-100 mt-1;
+}
+
+.custom-md .timeline .tl-desc {
+  @apply text-sm text-neutral-500 dark:text-neutral-400 mt-1 leading-relaxed;
+}
+
+/* 기술 스택 배지 */
+.custom-md .badges {
+  @apply flex flex-wrap gap-2 my-5;
+}
+
+.custom-md .badges span {
+  @apply px-3 py-1 rounded-lg text-sm font-medium
+         bg-[var(--btn-regular-bg)] text-[var(--btn-content)]
+         dark:bg-[var(--primary)] dark:text-[var(--deep-text)] transition;
+}
