@@ -1,0 +1,53 @@
+{
+  "PS 풀이 일지": {
+    "scope": "markdown",
+    "prefix": "ps",
+    "description": "PS 풀이 일지 뼈대를 삽입합니다 (Tab 으로 항목 이동)",
+    "body": [
+      "---",
+      "title: \"[${1|프로그래머스,백준,릿코드,코드업|}] ${2:문제 이름}\"",
+      "published: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "description: \"${3:Lv.1 · 해시 · 한 줄 요약}\"",
+      "tags: [\"${4:해시}\", \"${5|Python,Java,C++,JavaScript,C#|}\"]",
+      "category: \"PS/$1\"",
+      "draft: ${6|false,true|}",
+      "lang: \"ko\"",
+      "---",
+      "",
+      "> [문제 링크](${7:https://school.programmers.co.kr/learn/courses/30/lessons/00000}) · **${8:Lv.1}**",
+      "",
+      "## 문제 요약",
+      "",
+      "${9:한두 문장으로 문제를 정리합니다.}",
+      "",
+      "## 접근",
+      "",
+      "${10:처음에 어떻게 생각했는지, 왜 그 자료구조를 골랐는지 적습니다.}",
+      "",
+      "## 풀이",
+      "",
+      "```${11|python,java,cpp,javascript,csharp|} title=\"solution.${12|py,java,cpp,js,cs|}\"",
+      "$0",
+      "```",
+      "",
+      "## 시간복잡도",
+      "",
+      "- 시간: O(${13:n})",
+      "- 공간: O(${14:n})",
+      "",
+      "## 배운 점",
+      "",
+      "- ${15:다음에 비슷한 문제를 만나면 무엇을 먼저 볼지.}"
+    ]
+  },
+  "메모 박스 (admonition)": {
+    "scope": "markdown",
+    "prefix": "note",
+    "description": "색깔 있는 콜아웃 박스",
+    "body": [
+      ":::${1|note,tip,important,warning,caution|}",
+      "$0",
+      ":::"
+    ]
+  }
+}

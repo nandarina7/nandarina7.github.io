@@ -2,8 +2,8 @@
 title: "[프로그래머스] 문제 이름"
 published: 2026-09-05
 description: "Lv.1 · 해시 · 한 줄 요약"
-tags: ["프로그래머스", "코딩테스트", "Python"]
-category: "프로그래머스"
+tags: ["해시", "Python"]
+category: "PS/프로그래머스"
 draft: true          # 다 쓰면 false 로! true면 배포 사이트에 안 뜹니다 (로컬에선 보임)
 lang: "ko"
 ---
