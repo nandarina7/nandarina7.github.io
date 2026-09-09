@@ -119,3 +119,18 @@
     }
     
 }
+
+/* 대제목(h2)은 사이드바 위젯 제목과 같은 방식으로 강조한다.
+   가로선을 쓰면 표의 행 구분선과 굵기가 같아 구분이 안 되므로 세로 막대를 쓴다. */
+.custom-md h2 {
+    margin-top: 2.75em;
+    padding-left: 0.8rem;
+    border-left: 4px solid var(--primary);
+    line-height: 1.35;
+}
+
+/* 소제목(h3, h4)은 위쪽 여백만 살짝 준다 */
+.custom-md h3,
+.custom-md h4 {
+    margin-top: 1.9em;
+}
