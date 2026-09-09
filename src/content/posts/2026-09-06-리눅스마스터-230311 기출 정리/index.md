@@ -45,27 +45,21 @@ ex) OpenDV <br />
 ex) X 윈도 시스템 <br />
 
 리눅스 배포판을 알아보자. <br />
-
 ![리눅스 배포판 계보](./리눅스배포판.png)
+**Debian 계열**은 dpkg, apt, apt-get을 사용 <br />
+Debian : 이 계열의 뿌리(원조) <br />
+Ubuntu : Debian 기반 OS <br />
+Kali Linux : 해킹 및 보안용 <br />
+**Red Hat** 계열은 yum, dnf, rpm을 사용 <br />
+CentOS : yum사용 <br />
+Rocky Linux : yum 및 dnf 사용 <br />
 
-**Debian 계열**은 dpkg, apt, apt-get을 사용
-Debian : 이 계열의 뿌리(원조)
-
-
-### 2과목
-
-
-
-### 3과목
-
-### 4과목
-
-### 5과목
-
-## 오답노트
-
-범위 왜이렇게 많아
+**클러스터**는 여러 대의 컴퓨터를 묶어서 하나처럼 쓰는 기술이며, 목적에 따라 다음과 같이 종류가 나뉜다. <br />
+**고가용성 클러스터(HA)** : 서비스가 멈추지 않도록 일하는 컴퓨터(Primary)가 중지될 때 Backup 컴퓨터가 그 동작을 감시하여 작업을 이어받는다. 즉, 장애에 대비할 수 있다. <br />
+**부하분산(Load Balancing)** : 트래픽을 여러대에 나눠서 처리하는 역할 <br />
+**HPC(고계산용)** : 대규모 계산을 빠르게 처리하기 위한 용도 <br />
+**베어울프** : 값싼 일반 PC를 리눅스로 묶어 만든 HPC의 한 종류 <br />
 
 ## 참고자료
 
-[리눅스 배포판](https://www.hanbit.co.kr/channel/view.html?cmscode=CMS7512013046)
+[리눅스 배포판 계열](https://www.hanbit.co.kr/channel/view.html?cmscode=CMS7512013046)
