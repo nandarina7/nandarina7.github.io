@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # 글의 마지막 커밋일을 수정일로 쓰므로 전체 이력이 필요하다
+          fetch-depth: 0
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
